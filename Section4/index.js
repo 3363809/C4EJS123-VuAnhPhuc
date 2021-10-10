@@ -36,34 +36,34 @@ let dicTionary = {
     pm : 'The short version  of Project Manager, the person in charge of the final result of a project',
     ui : 'UI means User Interface, UX mean User Experience, are the process to define how your products looks and feels',
 }
-alert("Hi there ,this is dev dictionary");
+console.log("Hi there ,this is dev dictionary");
 let choose = prompt("Enter a keyword ");
 let explanation;
 while(true){
 
     if(choose == 'debug' ){
-        alert('debug \n'+ dicTionary.debug);
+        console.log('debug \n'+ dicTionary.debug);
         choose = prompt("Enter a keyword next ");
     }
     else if(choose == 'done'){
-        alert(choose +'\n' + dicTionary.done);
+        console.log(choose +'\n' + dicTionary.done);
         choose = prompt("Enter a keyword next ");
     }
     else if(choose == 'defect'){
-        alert(choose + '\n' + dicTionary.defect);
+        console.log(choose + '\n' + dicTionary.defect);
         choose = prompt("Enter a keyword next ");
     }
     else if(choose == 'pm'){
-        alert(choose + '\n' + dicTionary.pm);
+        console.log(choose + '\n' + dicTionary.pm);
         choose = prompt("Enter a keyword next ");
     }
     else if(choose == 'ui'){
-        alert(choose + '\n' + dicTionary.ui);
+        console.log(choose + '\n' + dicTionary.ui);
         choose = prompt("Enter a keyword next ");
 
     }
     else{
-        alert("We could not find your word: " + choose );
+        console.log("We could not find your word: " + choose );
         explanation = prompt('Leave your explanation');
         dicTionary[choose] = explanation;
         choose = prompt("Enter a keyword ");
